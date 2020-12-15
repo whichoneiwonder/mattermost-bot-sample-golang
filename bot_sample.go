@@ -18,7 +18,7 @@ const (
 	SAMPLE_NAME = "Mattermost Bot Sample"
 
 	USER_EMAIL    = "bot@example.com"
-	USER_PASSWORD = "password1"
+	USER_PASSWORD = "Password123()"
 	USER_NAME     = "samplebot"
 	USER_FIRST    = "Sample"
 	USER_LAST     = "Bot"
@@ -59,7 +59,7 @@ func main() {
 
 	// This is an important step.  Lets make sure we use the botTeam
 	// for all future web service requests that require a team.
-	//client.SetTeamId(botTeam.Id)
+	client.SetTeamId(botTeam.Id)
 
 	// Lets create a bot channel for logging debug messages into
 	CreateBotDebuggingChannelIfNeeded()
